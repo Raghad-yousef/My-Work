@@ -1,0 +1,123 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.grid-item {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+
+
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(179, 131, 225, 0.377);
+
+}
+.grid-sec{
+    margin: 20px 40px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gridB{
+    margin: 40px;
+    border: 1px solid rgba(156, 43, 226, 0);
+    border-radius:30px;
+    color:rgb(156, 43, 226);
+    font-weight:600;
+    background-color: rgba(156, 43, 226, 0.221);
+    
+    padding: 10px 20px;
+   
+}
+.contentgrid {
+
+    /* Adjust z-index as needed */
+    z-index: 1;
+
+    width: 100%;
+    /* Adjust the width as needed */
+
+
+
+}
+
+.contentgrid img {
+    width: 100%;
+    border-radius: 15px;
+
+    /* Rounded edges */
+
+}
+
+.txt {
+
+
+    text-align: left;
+    margin-left: 10px;
+    width: 90%;
+
+}
+
+.componentGB {
+    border: 1px solid rgba(38, 232, 20, 0.87);
+    border-radius: 20px;
+    color: white;
+    width: 90px;
+
+    background-color: rgba(38, 232, 20, 0.87);
+
+
+
+
+
+
+}
+
+.componentBB {
+    border-radius: 40px;
+    color: white;
+    border: 1px solid rgb(21, 153, 248);
+    background-color: rgb(21, 153, 248);
+    float: left;
+    z-index: 2;
+    position: absolute;
+    margin: 20px;
+}
+
+.txt p {
+
+    color: gray;
+    width: 100%;
+    font-size: 20px;
+}
+
+.txt h3 {
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+
+    /* Mobile styles */
+    .grid-container {
+        grid-template-columns: 1fr;
+
+        .i4,
+        .i5,
+        .i6 {
+            display: none;
+        }
+    }
+}

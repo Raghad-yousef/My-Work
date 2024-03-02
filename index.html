@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="stylesec3.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="grid.css">
+  <link rel="stylesheet" href="section4.css">
+  <link rel="stylesheet" href="sec5.css">
+  <link rel="stylesheet" href="sec6.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Landing Page</title>
+  <style>
+    .navbar {
+      background-color: transparent;
+      color: #fff;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .section1 {
+      background-color: #764ccae4;
+      color: #fff;
+      position: relative;
+      width: 100%;
+      height: auto;
+      top: 0px;
+      margin: 0;
+      padding-bottom: 40px;
+
+      overflow: hidden;
+
+    }
+
+    .search-container {
+      flex: 1;
+
+      text-align: center;
+    }
+
+    .search-input {
+      padding-top: 4px;
+      width: 30%;
+      font-size: 12px;
+      border-radius: 50px;
+      border: 1px solid   #764ccae4; ;
+
+
+
+    }
+
+    .search-icon {
+
+      margin-left: -20px;
+
+    }
+
+    .search-icon i {
+      color: #f2f7f2;
+      background-color: #48fb12;
+      border-radius: 50px;
+
+
+
+
+    }
+
+
+
+    .user-icon {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .square {
+      width: 7px;
+      height: 10px;
+      background-color: #66666696;
+    }
+
+    .videoSlider {
+      display: flex;
+      height: 70%;
+
+    }
+
+    .slidebuttons {
+      align-self: center;
+      margin: 15px;
+
+    }
+
+    .slidebuttons button {
+      width: 100%;
+      border-radius: 50px;
+      border: 1px solid #764ccae4;
+      background-color: #f2f7f258;
+
+
+    }
+
+    .green {
+      background-color: #48fb12;
+      border-radius: 20px;
+      border: 1px solid #48fb12;
+      color: #f2f7f2;
+
+      margin-bottom: 20px;
+      margin-left: 20px;
+
+
+
+    }
+
+    .blue {
+      background-color: #12d4fb;
+      border-radius: 20px;
+      border: 1px solid #12d4fb;
+      color: #f2f7f2;
+      display: block;
+
+
+
+
+
+    }
+
+    @media (min-width: 768px) {
+      .navbar {
+        margin: 20px;
+      }
+
+      .slidebuttons {
+        margin-left: 40px;
+      }
+    }
+
+    @media only screen and (max-width: 767px) {
+      .slidebuttons {
+        display: none;
+
+
+      }
+
+      .img1 {
+        width: 100%;
+
+        margin-top: 20%;
+        align-self: center;
+
+
+      }
+
+      .img2 {
+        display: none;
+      }
+
+    }
+
+    .imgslider {
+
+      width: 100%;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+
+
+    }
+
+    @media (min-width: 768px) {
+      .img2 {
+
+
+        background-size: cover;
+        margin: 10px;
+        border-radius: 20px;
+
+        height: 400px;
+
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-items: start;
+        justify-content: space-between;
+
+        padding: 40px;
+        padding-left: 60px;
+
+      }
+    }
+
+    .img1 {
+      background-size: cover;
+
+      margin: 10px;
+      border-radius: 20px;
+      width: 800px;
+      height: 400px;
+
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      align-items: start;
+      justify-content: space-between;
+      padding: 40px;
+      padding-left: 60px;
+    }
+
+    .twoB {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+
+
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <section class="section1">
+
+    <div class="navbar">
+      <div class="edu-text"><strong>EDU</strong></div>
+      <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search">
+        <span class="search-icon"><i class='bx bx-search-alt-2'></i></span>
+      </div>
+      <div class="user-icon">
+        <div class="square"></div>
+      </div>
+    </div>
+
+
+    <div class="videoSlider">
+
+      <div class="slidebuttons">
+        <button onclick="slide('left')"><i class='bx bx-chevron-left' style='color:#fffafa'></i></button>
+        <button onclick="slide('right')"><i class='bx bx-chevron-right' style='color:#fffafa'></i></button>
+      </div>
+
+      <div class="imgslider">
+        <div class="img1" style="background-image: url(images/New7.jpg);">
+          <button class="blue">education</button>
+          <h2 style="letter-spacing: 1px; font-size: xx-large; ">
+            Scientific Methods and Research
+          </h2>
+          <small>Julean Gnter</small>
+          <div class="twoB">
+            <button class="green">3445</button>
+            <div class="user-icon">
+              <i class='bx bx-play' style='color:#7c7275'></i>
+
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+
+        <div class="img2" style="background-image: url(images/New9.jpg);">
+          <button class="blue">eduction</button>
+          <h2   style="letter-spacing: 1px; font-size: xx-large; ">
+            Desiging Outside Graden</h2>
+          <small>Masd Gnter</small>
+          <div class="twoB">
+            <button class="green">8525</button>
+            <div class="user-icon">
+              <i class='bx bx-play' style='color:#7c7275'></i>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+  </section>
+
+
+  <section class="container1">
+
+    <div class="box">
+      <div class="circle">
+
+        <span><i class='bx bxl-microsoft-teams resize' style='color:#9012e0'></i></span>
+      </div>
+      <div class="title"><strong>Best Teaches
+        </strong>
+      </div>
+      <div class="content1">
+        <p>we have a master teachers grouped together to give you the best knowledge </p>
+      </div>
+      <a href="#" class="read-more">Read more &rarr;</a>
+    </div>
+
+    <div class="box">
+
+      <div class="circle">
+        <span><i class='bx bxs-book-content' style='color:#e0128f'></i> </span>
+      </div>
+      <div class="title"><strong>Professional Courses
+        </strong> </div>
+      <div class="content1">
+        <p>we have a master teachers grouped together to give you the best knowledge </p>
+      </div>
+      <a href="#" class="read-more">Read more &rarr;</a>
+    </div>
+
+    <div class="box">
+      <!-- Repeat the structure for the third div -->
+      <div class="circle">
+        <span><i class='bx bx-alarm-add' style='color:#ea0d4b'></i> </span>
+      </div>
+      <div class="title"><strong>Online Learning
+        </strong> </div>
+      <div class="content1">
+        <p>we have a master teachers grouped together to give you the best knowledge </p>
+      </div>
+      <a href="#" class="read-more">Read more &rarr;</a>
+    </div>
+
+
+
+  </section>
+
+
+  <section class="section3">
+
+
+    <span class="content">
+      <img src="images/New8.jpg" alt="Si">
+    </span>
+
+    <div class="container">
+      <div class="txtabout">
+        <h5> ABOUT </h5>
+        <h1>We Are Experts In Elearning </h1>
+        <h3>Designed has power </h3>
+        <p>Powered design seamlessly integrates technology and creativity to enhance user experiences. By leveraging
+          cutting-edge tools and innovations masterpieces.
+        </p>
+        <button onclick="" class="exploreb">
+          Explore </button>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+  </section>
+
+
+
+  <section style="text-align: center;">
+    <h5>COURSES</h5>
+    <h1>Popular Subjects</h1>
+    <nav>
+      <ul>
+        <li class="active"><a href="@">All</a></li>
+        <li><a href="@">Science</a></li>
+        <li><a href="@">Design</a></li>
+        <li><a href="@">Food</a></li>
+        <li><a href="@">Teach</a></li>
+        <li><a href="@">Music</a></li>
+        <li><a href="@">Medicine</a></li>
+      </ul>
+    </nav>
+
+
+
+
+
+
+
+  </section>
+
+  <section class="grid-sec">
+    <div class="grid-container">
+
+
+      <div class="grid-item i1">
+
+
+
+        <div class="contentgrid">
+          <img src="images/New6.jpg" alt="Si">
+
+        </div>
+        <button onclick="" class="componentBB"> 2445$</button>
+
+        <div class="txt">
+          <h2>Quantum Computers </h2>
+          <h4>Raghad yousef </h4>
+
+
+        </div>
+        <div style="display: flex; justify-content: space-between; margin: 40px;">
+          <p> Third level </p>
+          <button onclick="" class="componentGB">2445$</button>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <div class="grid-item i2">
+
+
+
+
+        <div class="contentgrid">
+          <img src="images/New5.jpg" alt="Si">
+
+        </div>
+        <button onclick="" class="componentBB"> 2445$</button>
+
+        <div class="txt">
+          <h2>Quantum Computers </h2>
+          <h4>Raghad yousef </h4>
+
+
+        </div>
+        <div style="display: flex; justify-content: space-between; margin: 40px;">
+          <p> Third level </p>
+          <button onclick="" class="componentGB">2445$</button>
+
+        </div>
+
+
+      </div>
+      <div class="grid-item i3">
+
+        <div class="contentgrid">
+          <img src="images/New4.jpg" alt="Si">
+
+        </div>
+        <button onclick="" class="componentBB"> 2445$</button>
+
+        <div class="txt">
+          <h2>Quantum Computers </h2>
+          <h4>Raghad yousef </h4>
+
+
+        </div>
+        <div style="display: flex; justify-content: space-between; margin: 40px;">
+          <p> Third level </p>
+          <button onclick="" class="componentGB">2445$</button>
+
+
+        </div>
+
+
+
+      </div>
+      <div class="grid-item i4">
+
+        <div class="contentgrid">
+          <img src="images/New3.jpg" alt="Si">
+
+        </div>
+        <button onclick="" class="componentBB"> 2445$</button>
+
+        <div class="txt">
+          <h2>Quantum Computers </h2>
+          <h4>Raghad yousef </h4>
+
+
+        </div>
+        <div style="display: flex; justify-content: space-between; margin: 40px;">
+          <p> Third level </p>
+          <button onclick="" class="componentGB">2445$</button>
+        </div>
+
+      </div>
+      <div class="grid-item i5">
+
+        <div class="contentgrid">
+          <img src="images/New2.jpg" alt="Si">
+
+        </div>
+        <button onclick="" class="componentBB"> 2445$</button>
+
+        <div class="txt">
+          <h2>Quantum Computers </h2>
+          <h4>Raghad yousef </h4>
+
+
+        </div>
+        <div style="display: flex; justify-content: space-between; margin: 40px;">
+          <p> Third level </p>
+          <button onclick="" class="componentGB">2445$</button>
+        </div>
+
+
+      </div>
+      <div class="grid-item i6">
+
+
+        <div class="contentgrid">
+          <img src="images/New1.jpg" alt="Si">
+
+        </div>
+        <button onclick="" class="componentBB"> 2445$</button>
+
+        <div class="txt">
+          <h2>Quantum Computers </h2>
+          <h4>Raghad yousef </h4>
+
+
+        </div>
+        <div style="display: flex; justify-content: space-between; margin: 40px;">
+          <p> Third level </p>
+          <button onclick="" class="componentGB">2445$</button>
+        </div>
+
+
+      </div>
+    </div>
+    <button onclick="" class="gridB">Load more</button>
+  </section>
+
+
+
+  <section>
+
+    <div class="grid2sec4">
+
+      <div class="boxgrid2">
+
+
+        <div class="circlegrid2 B">
+
+          <i class='bx bxs-baby-carriage' style="color: #eeebf1;"></i>
+        </div>
+
+        <div>
+          <strong>99+</strong>
+        </div>
+        <div>
+          <p>Teatchers </p>
+        </div>
+
+      </div>
+
+
+      <div class="boxgrid2">
+
+
+        <div class="circlegrid2 Pink">
+
+          <i class='bx bxs-baby-carriage' style="color: #eeebf1;"></i>
+        </div>
+
+        <div>
+          <strong>143+</strong>
+        </div>
+        <div>
+          <p>Courses </p>
+        </div>
+
+      </div>
+
+
+      <div class="boxgrid2">
+
+
+        <div class="circlegrid2 Purp">
+
+          <i class='bx bxs-baby-carriage' style="color: #eeebf1;"></i>
+        </div>
+
+        <div>
+          <strong>84+</strong>
+        </div>
+        <div>
+          <p>Classes </p>
+        </div>
+
+      </div>
+
+
+      <div class="boxgrid2">
+
+
+        <div class="circlegrid2 G">
+
+          <i class='bx bxs-baby-carriage' style="color: #eeebf1;"></i>
+        </div>
+
+        <div>
+          <strong>544</strong>
+        </div>
+        <div>
+          <p>Department </p>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <section class="section5">
+    <h5>Teatchers</h5>
+    <h1>Experts Advisors</h1>
+
+    <div class="grid2sec5">
+
+      <div class="boxgrid5">
+        <div class="circlegrid5" style="background-image: url(images/image1.jpg);"> </div>
+
+        <div class="boxcontent">
+
+          <strong>Raghad Yousef</strong>
+          <p style="color: #7c7275; font-size: small;">Teatcher </p>
+
+          <div class="soical">
+            <a href="@"><i class='bx bxl-facebook'></i></a>
+            <a href="@"><i class='bx bxl-instagram'></i></a>
+            <a href="@"><i class='bx bxl-telegram'></i></a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="boxgrid5">
+        <div class="circlegrid5" style="background-image: url(images/image2.jpg);"> </div>
+
+        <div class="boxcontent">
+
+          <strong>Raghad Yousef</strong>
+          <p style="color: #7c7275; font-size: small;">Teatcher </p>
+
+          <div class="soical">
+            <a href="@"><i class='bx bxl-facebook'></i></a>
+            <a href="@"><i class='bx bxl-instagram'></i></a>
+            <a href="@"><i class='bx bxl-telegram'></i></a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="boxgrid5">
+        <div class="circlegrid5" style="background-image: url(images/img1.png);"> </div>
+
+        <div class="boxcontent">
+
+          <strong>Raghad Yousef</strong>
+          <p style="color: #7c7275; font-size: small;">Teatcher </p>
+
+          <div class="soical">
+            <a href="@"><i class='bx bxl-facebook'></i></a>
+            <a href="@"><i class='bx bxl-instagram'></i></a>
+            <a href="@"><i class='bx bxl-telegram'></i></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <button onclick="" class="gridB">See all</button>
+
+
+
+  </section>
+
+  <section class="sec6">
+   
+    <div class="container6">
+      <div class="txtabout6">
+        <h5> FEATURES </h5>
+        <h1>Premium Courses</h1>
+        <h3>Lifts the horizon</h3>
+        <p>Powered design seamlessly integrates technology and creativity to enhance user experiences. By leveraging
+          cutting-edge tools and innovations masterpieces.
+        </p>
+        <div class="box6">
+          <div >
+
+            <span class="circle6 " ><i class='bx bxl-microsoft-teams resize' style='color:#9012e0'></i></span>
+          </div>
+          <div>
+            <div class="title6"><strong>Free Support
+              </strong>
+            </div>
+            <div class="contenttxt6">
+              <p>we have a master teachers grouped together to give you the best knowledge </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <span class="content6">
+      <img src="images/New7.jpg" alt="Si">
+    </span>
+
+
+
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
